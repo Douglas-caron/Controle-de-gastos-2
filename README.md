@@ -1,84 +1,92 @@
 <div align="center">
-  <h1>Gerenciador Financeiro Pessoal</h1>
-  <p><strong>Aplicação Full Stack com Java Spring e HTMX para um controle de gastos eficiente e dinâmico.</strong></p>
+  <h1>💰 Gerenciador Financeiro Pessoal</h1>
+  <p><strong>Aplicação Full Stack com Java Spring Boot + HTMX para controle de gastos simples, eficiente e dinâmico.</strong></p>
 
-  <img src="https://img.shields.io/badge/Projeto-Finalizado-28a745?style=for-the-badge" alt="Status do Projeto">
-  <img src="https://img.shields.io/badge/Java-17-E34F26?style=for-the-badge&logo=java" alt="Java 17">
+  <img src="https://img.shields.io/badge/Status-Finalizado-28a745?style=for-the-badge" alt="Status do Projeto">
+  <img src="https://img.shields.io/badge/Java-17-007396?style=for-the-badge&logo=java" alt="Java 17">
   <img src="https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=for-the-badge&logo=spring" alt="Spring Boot 3.x">
-  
 </div>
 
 ---
 
-### **🔗 Link para Acesso**
-> **A aplicação está publicada e pode ser acessada em:** [**https://controle-de-gastos-springboot-htmx.onrender.com**](https://controle-de-gastos-springboot-htmx.onrender.com)
+## 🔗 Acesso à Aplicação
+A versão publicada está disponível em:  
+👉 [**Controle de Gastos - GitHub Repository**](https://github.com/Douglas-caron/Controle-de-gastos-2)
+
 ---
 
-### 💡 Conceito do Projeto
-O objetivo central deste projeto é criar uma ferramenta web para o gerenciamento de despesas, onde o usuário pode realizar operações de CRUD (Criar, Ler, Atualizar, Deletar) de forma simples. A aplicação foi construída seguindo uma arquitetura robusta, com um backend bem definido e um frontend reativo, ideal para a disciplina de Projeto de Aplicação Full Stack.
+## 💡 Conceito
+O objetivo central deste projeto é oferecer uma ferramenta web intuitiva para gerenciamento de despesas pessoais.  
+A aplicação foi desenvolvida com **arquitetura robusta**, separando claramente as responsabilidades entre backend e frontend, e com um frontend dinâmico que proporciona uma experiência semelhante a uma SPA (Single Page Application).
 
-### ⭐ O que a aplicação faz?
-* **Cadastro de Despesas:** Permite registrar novas despesas com informações essenciais.
-* **Listagem Geral:** Exibe todos os gastos em uma tabela de fácil visualização.
-* **Edição de Registros:** Possibilita a correção ou atualização de qualquer despesa.
-* **Exclusão de Lançamentos:** Permite remover registros de forma permanente.
-* **Interatividade Instantânea:** A interface responde rapidamente às ações do usuário, sem a necessidade de recarregar a página.
+---
 
-### 🏗️ Arquitetura e Tecnologias
-A solução foi desenvolvida com uma clara separação de responsabilidades:
+## ⭐ Funcionalidades
+- 📌 **Cadastro de Despesas:** inclusão de novos gastos com informações básicas.  
+- 📋 **Listagem Geral:** visualização de todas as despesas em tabela organizada.  
+- ✏️ **Edição:** atualização de registros existentes de forma simples.  
+- 🗑️ **Exclusão:** remoção de lançamentos de forma definitiva.  
+- ⚡ **Interatividade Instantânea:** interface responsiva sem recarregamento de página (via **HTMX**).  
 
-* **Backend (API & Lógica de Negócio):** O **Spring Boot** serve como o cérebro da aplicação, gerenciando as regras de negócio, o acesso aos dados com **Spring Data JPA** e a exposição dos endpoints.
-* **Frontend (Renderização e Interação):** O **Thymeleaf** é responsável por renderizar as páginas no lado do servidor. O **HTMX** entra em cena para capturar eventos (cliques, envios de formulário) e fazer requisições AJAX, atualizando apenas fragmentos do HTML e proporcionando uma experiência de SPA (Single Page Application) com baixo custo de desenvolvimento.
+---
 
-| Categoria | Stack Utilizada |
-|:--- |:---|
-| **Linguagem** | `Java 17` |
-| **Framework Principal** | `Spring Boot 3` |
-| **Acesso a Dados** | `Spring Data JPA` & `Hibernate` |
-| **Template Engine** | `Thymeleaf` |
-| **Interface Dinâmica** | `HTMX` |
-| **Banco de Dados** | `PostgreSQL` |
-| **Build & Pacotes** | `Apache Maven` |
-| **Plataforma de Deploy** | `Render` |
+## 🏗️ Arquitetura & Tecnologias
+A aplicação foi construída com foco em **separação de camadas**:
 
-### 🖥️ Guia de Setup Local
-Para rodar este projeto na sua máquina, siga os passos abaixo.
+- **Backend (API & Regras de Negócio):**  
+  Implementado com **Spring Boot**, que gerencia lógica de negócio, persistência com **Spring Data JPA/Hibernate** e exposição de endpoints.  
 
-**Passo 1: Pré-requisitos**
-Garanta que você tenha o **Java (JDK) 17+** e o **Maven** instalados e configurados nas variáveis de ambiente do seu sistema.
+- **Frontend (Renderização & Interação):**  
+  **Thymeleaf** para renderização server-side e **HTMX** para interações dinâmicas, reduzindo a necessidade de JavaScript manual.
 
-**Passo 2: Clonagem do Repositório**
+| Categoria            | Stack Utilizada                  |
+|-----------------------|----------------------------------|
+| **Linguagem**         | Java 17                          |
+| **Framework**         | Spring Boot 3.x                  |
+| **Acesso a Dados**    | Spring Data JPA + Hibernate      |
+| **Template Engine**   | Thymeleaf                        |
+| **Interatividade**    | HTMX                             |
+| **Banco de Dados**    | PostgreSQL                       |
+| **Build & Gestão**    | Apache Maven                     |
+| **Deploy**            | Render                           |
+
+---
+
+## 🖥️ Guia de Instalação Local
+
+### 1️⃣ Pré-requisitos
+- **Java (JDK 17+)** instalado  
+- **Maven** configurado no sistema  
+- **PostgreSQL** em execução  
+
+### 2️⃣ Clonar Repositório
 ```bash
-git clone https://github.com/ZagoGiovanni/Controle-de-Gastos-SpringBoot-HTMX.git
-cd seu-repositorio
-```
+git clone https://github.com/Douglas-caron/Controle-de-gastos-2
+cd Controle-de-gastos-2
+3️⃣ Configurar Banco de Dados
+No arquivo src/main/resources/application.properties, ajuste as credenciais de conexão:
 
-**Passo 3: Configuração da Conexão com o Banco**
-Dentro do arquivo `src/main/resources/application.properties`, ajuste as credenciais de acesso ao seu banco de dados PostgreSQL.
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/nome_do_seu_banco
+properties
+Copy code
+spring.datasource.url=jdbc:postgresql://localhost:5432/nome_do_banco
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
-```
-
-**Passo 4: Inicialização do Servidor**
-Execute o comando a seguir no terminal, a partir da raiz do projeto:
-```bash
+4️⃣ Executar Aplicação
+bash
+Copy code
 ./mvnw spring-boot:run
-```
-Após a inicialização, a aplicação estará acessível em `http://localhost:8080`.
+A aplicação estará disponível em: http://localhost:8080
 
-### 🗺️ Estrutura do Código
-```
+🗺️ Estrutura do Projeto
+bash
+Copy code
 .
 ├── src
 │   ├── main
-│   │   ├── java/com/seu_pacote      # Código fonte Java (Controllers, Models, Repositories)
+│   │   ├── java/com/seu_pacote      # Controllers, Models, Repositories
 │   │   └── resources
-│   │       ├── static               # Arquivos CSS, JS e imagens
-│   │       └── templates            # Arquivos HTML (Thymeleaf)
-└── pom.xml                          # Dependências e configurações do Maven
-```
-
-### 🧑‍💻 Desenvolvedor
-Projeto desenvolvido por **Giovanni dos Santos Zago**.
+│   │       ├── static               # Arquivos estáticos (CSS, JS, imagens)
+│   │       └── templates            # Views Thymeleaf
+└── pom.xml                          # Configuração do Maven e dependências
+🧑‍💻 Desenvolvedor
+Projeto desenvolvido por Douglas Caron 
